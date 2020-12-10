@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -31,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
 
     private TextView mCountry_extension;
-    private EditText mPhoneNumber;
+    private TextInputEditText mPhoneNumber;
 
     private Button mSendOTP;
     private ProgressBar mProgressBar;
@@ -47,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         mCountry_extension = findViewById(R.id.text_view_254);
-        mPhoneNumber = findViewById(R.id.editTextPhone);
+        mPhoneNumber = findViewById(R.id.editTextPhone1);
         mSendOTP = findViewById(R.id.button_send_otp);
         mProgressBar = findViewById(R.id.progressBar);
         mInformationText = findViewById(R.id.text_view_information_text);
@@ -135,7 +136,7 @@ public class LoginActivity extends AppCompatActivity {
                 });
     }
     public void sendUserToHome(){
-        Intent homeIntent = new Intent(LoginActivity.this, HomeActivity.class);
+        Intent homeIntent = new Intent(LoginActivity.this, MainActivity.class);
         homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(homeIntent);

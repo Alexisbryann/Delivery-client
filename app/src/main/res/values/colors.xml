@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#D0001B</color>
-    <color name="e_loan">#F44336</color>
+    <color name="colorPrimary">#0099cc</color>
     <color name="text">#000000</color>
-    <color name="skyblue">#87cefa</color>
-    <color name="chk_lmt_btn">#008000</color>
+    <color name="colorPrimaryDark">#87cefa</color>
+    <color name="colorAccent">#99cc00</color>
 </resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1076470330221",
+    "project_id": "delivery-client-2022a",
+    "storage_bucket": "delivery-client-2022a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076470330221:android:c521cbdffb255b8f696064",
+        "android_client_info": {
+          "package_name": "com.alexis.delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076470330221-mks6ui0f6j6c4qoqpurhmjbc7b1pcu7i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alexis.delivery",
+            "certificate_hash": "8151924871e64eae42c2d69c037a507728af2258"
+          }
+        },
+        {
+          "client_id": "1076470330221-v67i02fbojl15feeqg841c9i1qhlhk7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNh-VWtD0HPU7UQRsV8912_ejhDjlvme4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1076470330221-v67i02fbojl15feeqg841c9i1qhlhk7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

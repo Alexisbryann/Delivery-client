@@ -91,7 +91,7 @@ public class OtpConfirmationActivity extends AppCompatActivity {
         }
     }
     public void sendUserToHome(){
-        Intent homeIntent = new Intent(OtpConfirmationActivity.this, HomeActivity.class);
+        Intent homeIntent = new Intent(OtpConfirmationActivity.this, MainActivity.class);
         homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(homeIntent);
