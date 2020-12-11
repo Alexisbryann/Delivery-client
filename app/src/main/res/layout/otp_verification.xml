@@ -8,14 +8,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:contentDescription="@string/logo1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/motorcycle_logo" />
 
     <TextView
         android:id="@+id/text_view_enter_otp"
@@ -36,11 +36,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corners_button"
         android:backgroundTint="@color/colorAccent"
         android:text="@string/verify_otp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/text"
+        android:textColor="@color/colorPrimary"
         android:textSize="20sp"
+        app:backgroundTint="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
@@ -72,14 +74,15 @@
         android:id="@+id/textInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="64dp"
         android:textColorHint="@color/colorPrimary"
-        app:boxStrokeColor="@color/colorAccent"
-        app:boxStrokeWidth="1dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
         app:errorEnabled="true"
         app:errorTextColor="@color/design_default_color_error"
+        app:hintTextColor="@color/text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_view_enter_otp">
@@ -88,9 +91,10 @@
             android:id="@+id/edit_text_enter_otp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
+            android:background="@drawable/rounded_corners"
             android:gravity="center"
             android:hint="@string/enter_the_otp_sent_to_you"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/text" />
     </com.google.android.material.textfield.TextInputLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

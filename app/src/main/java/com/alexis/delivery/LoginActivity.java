@@ -102,6 +102,7 @@ public class LoginActivity extends AppCompatActivity {
                 Intent otpIntent = new Intent(LoginActivity.this, OtpConfirmationActivity.class);
                 otpIntent.putExtra("AuthCredentials", s);
                 startActivity(otpIntent);
+                finish();
             }
 //                        },
 //                        10000);

@@ -27,7 +27,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
         android:text="@string/text_view_description"
@@ -45,11 +44,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/rounded_corners_button"
         android:text="@string/button_send_otp"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:backgroundTint="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
@@ -61,6 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:backgroundTint="@color/colorAccent"
+        android:progressTint="@color/colorPrimaryDark"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/button_send_otp"
         app:layout_constraintStart_toEndOf="@+id/button_send_otp"
@@ -82,15 +83,15 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:contentDescription="@string/logo"
         android:tintMode="multiply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/motorcycle_logo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editTextPhone"
@@ -98,10 +99,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
         android:textColorHint="@color/colorPrimary"
-        app:boxStrokeColor="@color/colorAccent"
         app:boxStrokeErrorColor="@color/design_default_color_error"
-        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
         app:counterOverflowTextColor="@color/design_default_color_on_secondary"
         app:errorEnabled="true"
         app:errorTextColor="@color/design_default_color_error"
@@ -114,7 +117,8 @@
             android:id="@+id/editTextPhone1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center"
             android:hint="@string/enter_phone"
             android:textColor="@color/colorPrimary" />
     </com.google.android.material.textfield.TextInputLayout>
