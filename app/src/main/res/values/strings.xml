@@ -4,7 +4,7 @@
     <string name="sign_up">Sign up</string>
     <string name="Already_have">Already have an account ?</string>
     <string name="log_in"><u>Log in</u></string>
-    <string name="logo">E-Loan</string>
+    <string name="logo">Logo</string>
     <string name="motto">Quickest, easiest and friendliest way to get a fast loan on your device!</string>
     <!-- Strings related to login -->
     <string name="prompt_password">Password</string>
@@ -46,4 +46,6 @@
     <string name="banner_ad_unit_id">ca-app-pub-8199773971116374/9049374411</string>
     <string name="enter_the_otp_sent_to_you">Enter the OTP sent to you</string>
     <string name="kenyan_flag">Kenyan flag</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="neque_porro_quisquam_est_qui_dolorem_ipsum_quia_dolor_sit_amet_consectetur_adipisci_velit">Welcome to Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</string>
 </resources>
