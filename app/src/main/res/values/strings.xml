@@ -45,4 +45,5 @@
     <string name="success">Successfully sent!</string>
     <string name="banner_ad_unit_id">ca-app-pub-8199773971116374/9049374411</string>
     <string name="enter_the_otp_sent_to_you">Enter the OTP sent to you</string>
+    <string name="kenyan_flag">Kenyan flag</string>
 </resources>

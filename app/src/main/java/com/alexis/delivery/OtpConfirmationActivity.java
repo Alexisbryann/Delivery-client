@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
@@ -25,7 +26,7 @@ public class OtpConfirmationActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String mAuthVerificationId;
     private FirebaseUser mCurrentUser;
-    private EditText mOtpVerification;
+    private TextInputEditText mOtpVerification;
     private Button mVerifyOtp;
     private ProgressBar mProgressBar;
     private TextView mInformation;

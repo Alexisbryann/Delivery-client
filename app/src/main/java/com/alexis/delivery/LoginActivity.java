@@ -22,6 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class LoginActivity extends AppCompatActivity {
@@ -31,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseUser mCurrentUser;
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
 
-    private TextView mCountry_extension;
+    private int mCountry_extension;
     private TextInputEditText mPhoneNumber;
 
     private Button mSendOTP;
@@ -47,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
         mCurrentUser = mAuth.getCurrentUser();
 
 
-        mCountry_extension = findViewById(R.id.text_view_254);
+//        mCountry_extension = findViewById(R.id.text_view_254);
         mPhoneNumber = findViewById(R.id.editTextPhone1);
         mSendOTP = findViewById(R.id.button_send_otp);
         mProgressBar = findViewById(R.id.progressBar);
@@ -57,11 +58,12 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String countryExtension = mCountry_extension.getText().toString();
-                String phoneNumber = mPhoneNumber.getText().toString();
-                String completeNumber = countryExtension + phoneNumber;
+//                mCountry_extension = (+254);
+//                String countryExtension = String.valueOf(mCountry_extension);
+                String phoneNumber = Objects.requireNonNull(mPhoneNumber.getText()).toString();
+                String completeNumber = "+254" + phoneNumber;
 
-                if (countryExtension.isEmpty() || phoneNumber.isEmpty()){
+                if (phoneNumber.isEmpty()){
                     mInformationText.setText(R.string.information_text1);
                     mInformationText.setVisibility(View.VISIBLE);
                 }else {
