@@ -45,14 +45,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/rounded_corners_button"
+        android:backgroundTint="@color/colorOrange"
+        android:backgroundTintMode="src_over"
         android:text="@string/button_send_otp"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:backgroundTint="@color/colorOrange"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
-        app:rippleColor="@color/colorPrimaryDark" />
+        app:rippleColor="@color/colorPrimary" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -96,19 +99,19 @@
         android:id="@+id/editTextPhone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/rounded_corners"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorPrimary"
         android:gravity="center"
-        android:textColorHint="@color/colorPrimary"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/text"
         app:boxStrokeErrorColor="@color/design_default_color_error"
-        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidth="2dp"
         app:boxStrokeWidthFocused="0dp"
         app:counterOverflowTextColor="@color/design_default_color_on_secondary"
         app:errorEnabled="true"
         app:errorTextColor="@color/design_default_color_error"
-        app:hintTextColor="@color/text"
+        app:hintTextColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/text_view_description">
@@ -117,17 +120,17 @@
             android:id="@+id/editTextPhone1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_corners"
+            android:background="@color/colorPrimary"
             android:gravity="center"
             android:hint="@string/enter_phone"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorAccent" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginBottom="3dp"
         android:contentDescription="@string/kenyan_flag"
         app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"
