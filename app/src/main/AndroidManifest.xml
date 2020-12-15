@@ -19,10 +19,12 @@
         <activity android:name="com.alexis.e_shop.OtpConfirmationActivity">
         </activity>
         <activity android:name="com.alexis.e_shop.MainActivity"
-            android:theme="@style/AppTheme">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
         <activity android:name="com.alexis.e_shop.LoginActivity">
         </activity>
+
+
     </application>
 
 </manifest>
