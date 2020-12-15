@@ -1,4 +1,4 @@
-package com.alexis.delivery;
+package com.alexis.e_shop;
 
 public class SplashScreenActivity {
 }

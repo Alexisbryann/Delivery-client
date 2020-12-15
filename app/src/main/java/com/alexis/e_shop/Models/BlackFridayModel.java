@@ -1,4 +1,4 @@
-package com.alexis.delivery.Models;
+package com.alexis.e_shop.Models;
 
 public class BlackFridayModel  {
     public int image;

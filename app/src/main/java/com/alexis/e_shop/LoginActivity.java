@@ -1,10 +1,9 @@
-package com.alexis.delivery;
+package com.alexis.e_shop;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -20,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
+import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 
 import java.util.Objects;
@@ -71,12 +71,15 @@ public class LoginActivity extends AppCompatActivity {
                     mSendOTP.setEnabled(false);
                     mInformationText.setVisibility(View.INVISIBLE);
 
-                    PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                            completeNumber,        // Phone number to verify
-                            60,                 // Timeout duration
-                            TimeUnit.SECONDS,   // Unit of timeout
-                            LoginActivity.this,               // Activity (for callback binding)
-                            mCallbacks);        // OnVerificationStateChangedCallbacks
+                    PhoneAuthProvider.verifyPhoneNumber(PhoneAuthOptions
+                                    .newBuilder(FirebaseAuth.getInstance())
+                            .setActivity(LoginActivity.this)
+                            .setPhoneNumber(completeNumber)
+                            .setTimeout(60L,TimeUnit.SECONDS)
+                                    .setCallbacks(mCallbacks)
+                                    .build());
+//                    PhoneAuthProvider.verifyPhoneNumber(options);
+
                 }
             }
         });

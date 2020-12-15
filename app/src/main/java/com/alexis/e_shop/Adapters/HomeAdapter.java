@@ -1,6 +1,5 @@
-package com.alexis.delivery.Adapters;
+package com.alexis.e_shop.Adapters;
 
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 

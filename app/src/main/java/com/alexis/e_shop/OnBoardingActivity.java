@@ -1,4 +1,4 @@
-package com.alexis.delivery;
+package com.alexis.e_shop;
 
 import android.content.Intent;
 import android.os.Bundle;

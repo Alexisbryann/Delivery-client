@@ -1,4 +1,4 @@
-package com.alexis.delivery.Fragments;
+package com.alexis.e_shop.Fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.alexis.delivery.R;
+import com.alexis.e_shop.R;
 
 public class HomeFragment extends Fragment {
 

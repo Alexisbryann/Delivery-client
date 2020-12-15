@@ -1,4 +1,4 @@
-package com.alexis.delivery.Adapters;
+package com.alexis.e_shop.Adapters;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -6,9 +6,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.alexis.delivery.Fragments.BlackFridayDealsFragment;
-import com.alexis.delivery.Fragments.CategoriesFragment;
-import com.alexis.delivery.Fragments.HomeFragment;
+import com.alexis.e_shop.Fragments.BlackFridayDealsFragment;
+import com.alexis.e_shop.Fragments.CategoriesFragment;
+import com.alexis.e_shop.Fragments.HomeFragment;
 
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {

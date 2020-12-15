@@ -1,4 +1,4 @@
-package com.alexis.delivery.Fragments;
+package com.alexis.e_shop.Fragments;
 
 public class MobilePhoneAccessories {
 }

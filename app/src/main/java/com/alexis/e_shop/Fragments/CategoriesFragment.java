@@ -1,4 +1,4 @@
-package com.alexis.delivery.Fragments;
+package com.alexis.e_shop.Fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,9 +10,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.alexis.delivery.Adapters.CategoriesAdapter;
-import com.alexis.delivery.Models.CategoriesModel;
-import com.alexis.delivery.R;
+import com.alexis.e_shop.Adapters.CategoriesAdapter;
+import com.alexis.e_shop.Models.CategoriesModel;
+import com.alexis.e_shop.R;
 
 import java.util.ArrayList;
 

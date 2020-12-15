@@ -1,4 +1,4 @@
-package com.alexis.delivery.Adapters;
+package com.alexis.e_shop.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,8 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.alexis.delivery.Models.BlackFridayModel;
-import com.alexis.delivery.R;
+import com.alexis.e_shop.Models.BlackFridayModel;
+import com.alexis.e_shop.R;
 
 import java.util.ArrayList;
 

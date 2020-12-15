@@ -1,11 +1,11 @@
-package com.alexis.delivery;
+package com.alexis.e_shop;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
-import com.alexis.delivery.Adapters.ViewPagerAdapter;
+import com.alexis.e_shop.Adapters.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {

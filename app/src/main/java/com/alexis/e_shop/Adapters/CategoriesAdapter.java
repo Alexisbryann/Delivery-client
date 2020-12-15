@@ -1,4 +1,4 @@
-package com.alexis.delivery.Adapters;
+package com.alexis.e_shop.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,9 +13,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.alexis.delivery.Fragments.BlackFridayDealsFragment;
-import com.alexis.delivery.Models.CategoriesModel;
-import com.alexis.delivery.R;
+import com.alexis.e_shop.Fragments.BlackFridayDealsFragment;
+import com.alexis.e_shop.Models.CategoriesModel;
+import com.alexis.e_shop.R;
 
 import java.util.ArrayList;
 

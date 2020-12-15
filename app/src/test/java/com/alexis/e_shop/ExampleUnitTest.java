@@ -1,4 +1,4 @@
-package com.alexis.delivery;
+package com.alexis.e_shop;
 
 import org.junit.Test;
 
