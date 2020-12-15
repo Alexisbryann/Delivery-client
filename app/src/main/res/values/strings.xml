@@ -48,4 +48,10 @@
     <string name="kenyan_flag">Kenyan flag</string>
     <string name="get_started">GET STARTED</string>
     <string name="neque_porro_quisquam_est_qui_dolorem_ipsum_quia_dolor_sit_amet_consectetur_adipisci_velit">Welcome to Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</string>
+    <string name="product_image">product image</string>
+    <string name="add_to_cart">add to cart</string>
+    <string name="add">add</string>
+    <string name="subtract">subtract</string>
+    <string name="shopping_basket">shopping basket</string>
+    <string name="product_name">product name</string>
 </resources>
