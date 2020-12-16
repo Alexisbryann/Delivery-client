@@ -54,4 +54,14 @@
     <string name="subtract">subtract</string>
     <string name="shopping_basket">shopping basket</string>
     <string name="product_name">product name</string>
+    <string name="item_image">item image</string>
+    <string name="item_name_and_details">Item name and details</string>
+    <string name="remove">remove</string>
+    <string name="item_price">Item price</string>
+    <string name="favourite_icon">favourite icon</string>
+    <string name="delete_icon">delete icon</string>
+    <string name="total">TOTAL</string>
+    <string name="ksh_250">ksh 250</string>
+    <string name="complete_your_order">complete your order</string>
+    <string name="call_to_order">call to order</string>
 </resources>

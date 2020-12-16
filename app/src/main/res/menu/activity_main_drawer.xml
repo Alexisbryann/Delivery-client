@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/app_navigation">
+        <menu>
+            <group
+                android:checkableBehavior="single"
+                android:enabled="true">
+                <item
+                    android:id="@+id/nav_bad_habits"
+                    android:title="@string/bad_habits" />
+                <item
+                    android:id="@+id/nav_best_practice"
+                    android:title="@string/best_practice" />
+                <item
+                    android:id="@+id/nav_breeds"
+                    android:title="@string/breeds" />
+                <item
+                    android:id="@+id/nav_brooding"
+                    android:title="@string/brooding" />
+                <item
+                    android:id="@+id/nav_housing_and_equipment"
+                    android:title="@string/housing_and_equipment" />
+                <item
+                    android:id="@+id/nav_poultry_management"
+                    android:title="@string/poultry_management" />
+                <item
+                    android:id="@+id/nav_poultry_health_management"
+                    android:title="@string/poultry_health_management" />
+            </group>
+        </menu>
+    </item>
+    <item
+android:title="@string/get_more">
+<menu>
+    <group>
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/About" />
+        <item
+            android:id="@+id/nav_premium_app"
+            android:title="@string/premium_app" />
+    </group>
+</menu>
+</item>
+</menu>
